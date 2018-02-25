@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>下拉菜单</h1>
+        <div class="dropdown pull-right">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                下拉菜单
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu" aira-labelledby="dropdownMenu1">
+                <li role="presentation" class="dropdown-header">大写一到四</li>
+                <li><a href="#" role="menuitem">一</a></li>
+                <li><a href="#" role="menuitem">二</a></li>
+                <li><a href="#" role="menuitem">三</a></li>
+                <li><a href="#" role="menuitem">四</a></li>
+                <li role="presentation" class="dropdown-header">小写1到4</li>
+                <li><a href="#" role="menuitem">1</a></li>
+                <li><a href="#" role="menuitem">2</a></li>
+                <li class="disabled"><a href="#" role="menuitem">3不可用</a></li>
+                <li><a href="#" role="menuitem">4</a></li>
+                <li role="presentation" class="divider">分割线</li>
+                <li><a href="#" role="menuitem">退出</a></li>
+            </ul>
+        </div>
+        <h1>分裂式下拉菜单</h1>
+        <!-- <div class="btn-group"> -->
+        <!-- 向上弹出 -->
+        <div class="btn-group dropup">
+            <button type="button" class="btn btn-default">分裂式下拉菜单</button>
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#" role="menuitem">一</a></li>
+                <li><a href="#" role="menuitem">二</a></li>
+                <li><a href="#" role="menuitem">三</a></li>
+                <li><a href="#" role="menuitem">四</a></li>
+            </ul>
+        </div>
+        <br>
+        <h1>按钮组</h1>
+        <!-- 第一种 横向-->
+        <div class="btn-group">
+            <button type="button" class="btn btn-default">Left</button>
+            <button type="button" class="btn btn-default">Middle</button>
+            <button type="button" class="btn btn-default">Right</button>
+        </div>
+        <!-- 第二种 垂直 -->
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-default">Left</button>
+            <button type="button" class="btn btn-default">Middle</button>
+            <button type="button" class="btn btn-default">Right</button>
+        </div>
+        <!-- 全屏的 -->
+        <div class="btn-group-justified">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default">Left</button>
+                <button type="button" class="btn btn-default">Middle</button>
+                <button type="button" class="btn btn-default">Right</button>
+            </div>
+        </div>
+        <!-- 第三种 小写 -->
+        <div class="btn-toolbar">
+            <div class="btn-group btn-group-sm">
+                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span></button>
+                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-heart"></span></button>
+                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-star"></span></button>
+            </div>
+        <!-- 第四种 大写 -->
+            <div class="btn-group btn-group-lg">
+                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-left"></span></button>
+                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-center"></span></button>
+                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-align-right"></span></button>
+            </div>
+        </div>
+        <!-- 第五种 带下拉菜单的按钮组 -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-default">1</button>
+            <button type="button" class="btn btn-default">2</button>
+            <div class="btn-group">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                    下拉菜单
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu" aira-labelledby="dropdownMenu1">
+                    <li><a href="#" role="menuitem">111</a></li>
+                    <li><a href="#" role="menuitem">222</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+</body>
+</html>

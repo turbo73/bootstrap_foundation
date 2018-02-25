@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+    <style type="text/css">
+        div.circle-avatar{
+                /* make it responsive */
+                /*max-width: 100%;*/
+                /*width:100%;*/
+                /*height:auto;*/
+                width: 50px;
+                height: auto;
+                display:block;
+                /* div height to be the same as width*/
+                /*padding-top:100%;*/
+                padding-top:50px;
+
+                /* make it a circle */
+                border-radius:50%;
+
+                /* Centering on image`s center*/
+                background-position-y: center;
+                background-position-x: center;
+                background-repeat: no-repeat;
+
+                /* it makes the clue thing, takes smaller dimension to fill div */
+                background-size: cover;
+
+                /* it is optional, for making this div centered in parent*/
+                /*margin: 0 auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;*/
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button type="button" class="btn btn-default">default</button>
+        <button type="button" class="btn btn-primary">primary</button>
+        <button type="button" class="btn btn-success">success</button>
+        <button type="button" class="btn btn-info">info</button>
+        <button type="button" class="btn btn-warning">warning</button>
+        <button type="button" class="btn btn-link">link</button>
+        <button type="button" class="btn btn-danger">danger</button>
+    </div>
+    <div class="div">
+        <button type="button" class="btn btn-info btn-lg">info</button>
+        <button type="button" class="btn btn-info">info</button>
+        <button type="button" class="btn btn-info btn-sm">info</button>
+        <button type="button" class="btn btn-info btn-xs">info</button>
+    </div>
+    <button type="button" class="btn btn-default btn-block" role="button">default</button>
+    <a href="#" class="btn btn-default btn-lg active" role="button" disabled="disabled">default</a>
+    <input type="button" class="btn btn-default" value="Input">
+    <h1>圆图</h1>
+    <img src="pic.jpg" alt="" class="img-circle">
+    <!-- <img src="pic.jpg" alt="" class="img-circle m-t-xs img-responsive"></div> -->
+    <h1>特殊裁剪后的圆图（适应非正方形）</h1>
+    <div class="circle-avatar" style="background-image:url(pic.jpg)"></div>
+    <!-- <div class="circle-avatar" style="background-image:url(http://placekitten.com/g/200/400)"></div> -->
+
+    <h1>圆角图</h1>
+    <img src="pic.jpg" alt="" class="img-rounded">
+    <h1>带边框的圆角图</h1>
+    <img src="pic.jpg" alt="" class="img-thumbnail">
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+</style>
+</head>
+    <body>
+        <div class="container" style="margin-top:30px;">
+            <h1>输入框组</h1>
+            <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input type="text" class="form-control" placeholder="UserName">
+            </div>
+            <div class="input-group">
+                <input type="text" class="form-control">
+                <span class="input-group-addon">.00</span>
+            </div>
+            <div class="input-group col-xs-3 col-xs-offset-4">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control">
+                <span class="input-group-addon">.00</span>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <input type="checkbox">
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <input type="radio">
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default">go</button>
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">go
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" role="menuitem">111</a></li>
+                                <li><a href="#" role="menuitem">222</a></li>
+                            </ul>
+                        </div>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1>导航</h1>
+        <ul id="mytab" class="nav nav-tabs nav-justified" role="tablist">
+            <!-- nav-tabs改为nav-pills为胶囊式标签页 -->
+            <!-- 额外添加nav-stacked则为垂直展示 -->
+            <!-- 额外添加nav-justified则为充满全屏 -->
+            <li role="presentation" class="active"><a href="">home</a></li>
+            <li role="presentation"><a href="">hello</a></li>
+            <li role="presentation" class="disabled"><a href="">world</a></li>
+            <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Dropdown <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="presentation"><a href="#" role="menuitem">111</a></li>
+                    <li role="presentation"><a href="#" role="menuitem">222</a></li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+
+        <h1>路径导航</h1>
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Library</a></li>
+            <li class="active">Data</li>
+        </ol>
+
+        <h1>导航条</h1>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- navbar-default为默认白色，navbar-inverse为反转成黑色 -->
+            <!-- 额外添加navbar-fixed-top则为顶部显示导航且固定 -->
+            <!-- 额外添加navbar-fixed-bottom则为底部显示导航且固定 -->
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">极客</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav" id="mytab">
+                        <li class="active"><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="输入文本搜索">
+                            <button type="submit" class="btn btn-default">搜索</button>
+                        </div>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Link</a></li>
+                        <li role="presentation" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                设置 <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation"><a href="#" role="menuitem">修改密码</a></li>
+                                <li role="presentation"><a href="#" role="menuitem">退出</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <p>占位用</p>
+        <p>占位用</p>
+        <p>占位用</p>
+        <p>占位用</p>
+        <p>占位用</p>
+        <p>占位用</p>
+        <p>占位用</p>
+        <p>占位用</p>
+        <p>占位用</p>
+        <p>占位用</p>
+        <p>占位用</p>
+        <p>占位用</p>
+        <p>占位用</p>
+        <p>占位用</p>
+        <p>占位用</p>
+        <p>占位用</p>
+        <p>占位用</p>
+
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Data</a></li>
+            </ol>
+        </nav>
+
+        <script src="jquery-2.1.4.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <script>
+            // 响应式切换标签页
+            $("#mytab a").click(function(e){
+                // var class_li = $("#mytab li").attr("class");
+                // if(class_li=="disabled")return
+                e.preventDefault();
+                $(this).tab("show");
+            })
+        </script>
+    </body>
+</html>
